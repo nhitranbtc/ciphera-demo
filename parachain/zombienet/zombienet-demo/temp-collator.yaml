@@ -1,0 +1,41 @@
+metadata:
+  name: temp-collator
+  namespace: zombie-a16ad5cac76603612fdefb00cd9f9424
+  labels:
+    zombie-role: temp
+    app: zombienet
+    zombie-ns: zombie-a16ad5cac76603612fdefb00cd9f9424
+    name: zombie-a16ad5cac76603612fdefb00cd9f9424
+    instance: temp-collator
+spec:
+  cfgPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/temp-collator/cfg
+  dataPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/temp-collator/data
+  ports:
+    - containerPort: 9615
+      name: prometheus
+      flag: --prometheus-port
+      hostPort: 62409
+    - containerPort: 9933
+      name: rpc
+      flag: --rpc-port
+      hostPort: 62408
+    - containerPort: 9944
+      name: rpc-ws
+      flag: --ws-port
+      hostPort: 62407
+    - containerPort: 30333
+      name: p2p
+      flag: --port
+      hostPort: 62406
+  command:
+    - bash
+    - -c
+    - ../target/release/ciphera-collator export-genesis-head -d
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/export-genesis-state/2111
+      --chain
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/2111-rococo-local.json
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/cfg/genesis-state-2111
+      && ../target/release/ciphera-collator export-genesis-wasm --chain
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/2111-rococo-local.json
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/cfg/genesis-wasm-2111
+  env: {}

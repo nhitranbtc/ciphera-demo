@@ -1,0 +1,33 @@
+# Ignore build artifacts from the local tests sub-crate.
+**/target/
+**/contracts/demo_ciphera/docs
+
+**/parachain/binaries/*
+**/parachain/zombienet/*
+!**/parachain/zombienet/zombienet-demo
+**/parachain/zombienet/zombienet-demo/alice/data/chains/rococo_local_testnet/db
+**/parachain/zombienet/zombienet-demo/bob/data/chains/rococo_local_testnet/db
+**/parachain/zombienet/zombienet-demo/ciphera-collator1/data/chains/local_testnet/db
+**/parachain/zombienet/zombienet-demo/ciphera-collator1/data/polkadot/chains/rococo_local_testnet/db
+
+!**/parachain/zombienet/ciphera-demo
+**/parachain/zombienet/ciphera-demo/alice/data/chains/rococo_local_testnet/db
+**/parachain/zombienet/ciphera-demo/bob/data/chains/rococo_local_testnet/db
+**/parachain/zombienet/ciphera-demo/ciphera-collator1/data/chains/local_testnet/db
+**/parachain/zombienet/ciphera-demo/ciphera-collator1/data/polkadot/chains/rococo_local_testnet/db
+!**/parachain/zombienet/scripts-demo
+
+
+# MacOS
+**/zombienet-macos
+**/.DS_Store
+
+# Node
+**/node_modules
+
+# Code Editors / IDEs
+.vscode
+.idea
+
+# Binaries
+**/bin/

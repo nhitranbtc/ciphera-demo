@@ -1,0 +1,28 @@
+[settings]
+timeout = 1000
+
+# Used to start 4 validator nodes and 2 collator nodes - 1 per parachain
+
+[relaychain]
+default_command = "../binaries/polkadot-v1.17.0/polkadot"
+chain = "rococo-local"
+
+[[relaychain.nodes]]
+name = "alice"
+validator = true
+ws_port = 51072
+
+[[relaychain.nodes]]
+name = "bob"
+validator = true
+ws_port = 51076
+
+
+[[parachains]]
+id = 2111
+
+
+[[parachains.collators]]
+name = "ciphera-collator1"
+command = "../target/release/ciphera-collator"
+ws_port = 9944

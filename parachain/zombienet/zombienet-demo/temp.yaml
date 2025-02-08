@@ -1,0 +1,36 @@
+metadata:
+  name: temp
+  namespace: zombie-a16ad5cac76603612fdefb00cd9f9424
+  labels:
+    zombie-role: temp
+    app: zombienet
+    zombie-ns: zombie-a16ad5cac76603612fdefb00cd9f9424
+    name: zombie-a16ad5cac76603612fdefb00cd9f9424
+    instance: temp
+spec:
+  cfgPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/temp/cfg
+  dataPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/temp/data
+  ports:
+    - containerPort: 9615
+      name: prometheus
+      flag: --prometheus-port
+      hostPort: 62393
+    - containerPort: 9933
+      name: rpc
+      flag: --rpc-port
+      hostPort: 62392
+    - containerPort: 9944
+      name: rpc-ws
+      flag: --ws-port
+      hostPort: 62391
+    - containerPort: 30333
+      name: p2p
+      flag: --port
+      hostPort: 62390
+  command:
+    - bash
+    - -c
+    - ../binaries/polkadot-v1.17.0/polkadot build-spec --chain rococo-local
+      --disable-default-bootnode >
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/cfg/rococo-local-plain.json
+  env: {}

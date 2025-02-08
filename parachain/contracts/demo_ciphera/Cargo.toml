@@ -1,0 +1,24 @@
+[package]
+name = "demo_ciphera"
+version = "0.1.0"
+authors = ["[your_name] <[your_email]>"]
+edition = "2021"
+
+[dependencies]
+ink = { version = "5.1.0", default-features = false }
+access_control = { path = "access_control", default-features = false, features = [
+    "ink-as-dependency",
+] }
+
+[dev-dependencies]
+ink_e2e = { version = "5.1.0" }
+
+[lib]
+path = "lib.rs"
+name = "demo_ciphera"
+
+[features]
+default = ["std"]
+std = ["ink/std", "access_control/std"]
+ink-as-dependency = []
+e2e-tests = []

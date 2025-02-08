@@ -1,0 +1,42 @@
+metadata:
+  name: alice
+  namespace: zombie-a16ad5cac76603612fdefb00cd9f9424
+  labels:
+    zombie-role: node
+    app: zombienet
+    zombie-ns: zombie-a16ad5cac76603612fdefb00cd9f9424
+    name: zombie-a16ad5cac76603612fdefb00cd9f9424
+    instance: alice
+spec:
+  cfgPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/alice/cfg
+  dataPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/alice/data
+  ports:
+    - containerPort: 9615
+      name: prometheus
+      flag: --prometheus-port
+      hostPort: 62381
+    - containerPort: 9933
+      name: rpc
+      flag: --rpc-port
+      hostPort: 62380
+    - containerPort: 9944
+      name: rpc-ws
+      flag: --ws-port
+      hostPort: 51072
+    - containerPort: 30333
+      name: p2p
+      flag: --port
+      hostPort: 62379
+  command:
+    - ../binaries/polkadot-v1.17.0/polkadot --chain
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/alice/cfg/rococo-local.json
+      --name alice --rpc-cors all --unsafe-rpc-external --rpc-methods unsafe
+      --no-mdns --node-key
+      2bd806c97f0e00af1a1fc3328fa763a9269723c8db8fac4f93af71db186d6e90
+      --no-telemetry --prometheus-external --validator
+      --insecure-validator-i-know-what-i-do --prometheus-port 62381 --rpc-port
+      51072 --listen-addr /ip4/0.0.0.0/tcp/62379/ws --base-path
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/alice/data
+  env:
+    COLORBT_SHOW_HIDDEN: "1"
+    RUST_BACKTRACE: FULL

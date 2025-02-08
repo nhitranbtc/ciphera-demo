@@ -1,0 +1,104 @@
+2025-02-05 20:37:48 Parity Polkadot    
+2025-02-05 20:37:48 ✌️  version 1.15.6-39e71bd58f2    
+2025-02-05 20:37:48 ❤️  by Parity Technologies <admin@parity.io>, 2017-2025    
+2025-02-05 20:37:48 📋 Chain specification: Rococo Local Testnet    
+2025-02-05 20:37:48 🏷  Node name: alice    
+2025-02-05 20:37:48 👤 Role: AUTHORITY    
+2025-02-05 20:37:48 💾 Database: RocksDb at /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/alice/data/chains/rococo_local_testnet/db/full    
+2025-02-05 20:37:50 🔨 Initializing Genesis block/state (state: 0xc9ff…fb1f, header-hash: 0x2e29…9ca1)    
+2025-02-05 20:37:50 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.    
+2025-02-05 20:37:50 👶 Creating empty BABE epoch changes on what appears to be first startup.    
+2025-02-05 20:37:50 🚀 Using prepare-worker binary at: "/Users/aimee/core/NimbusProject/DemoProject/gitTest/testCustomToken/demo-contracts-appchain/parachain/zombienet/../binaries/polkadot-v1.17.0/polkadot-prepare-worker"    
+2025-02-05 20:37:50 🚀 Using execute-worker binary at: "/Users/aimee/core/NimbusProject/DemoProject/gitTest/testCustomToken/demo-contracts-appchain/parachain/zombienet/../binaries/polkadot-v1.17.0/polkadot-execute-worker"    
+2025-02-05 20:37:50 🏷  Local node identity is: 12D3KooWQCkBm1BYtkHpocxCwMgR8yjitEeHGx8spzcDLGt2gkBm    
+2025-02-05 20:37:50 Running libp2p network backend    
+2025-02-05 20:37:50 💻 Operating system: macos    
+2025-02-05 20:37:50 💻 CPU architecture: aarch64    
+2025-02-05 20:37:50 📦 Highest known block at #0    
+2025-02-05 20:37:50 〽️ Prometheus exporter started at 0.0.0.0:62381    
+2025-02-05 20:37:50 Running JSON-RPC server: addr=0.0.0.0:51072, allowed origins=["*"]    
+2025-02-05 20:37:50 🏁 CPU score: 1.03 GiBs    
+2025-02-05 20:37:50 🏁 Memory score: 47.83 GiBs    
+2025-02-05 20:37:50 🏁 Disk score (seq. writes): 2.83 GiBs    
+2025-02-05 20:37:50 🏁 Disk score (rand. writes): 578.22 MiBs    
+2025-02-05 20:37:50 Starting with an empty approval vote DB.
+2025-02-05 20:37:50 🚨 Some security issues have been detected. 
+Running validation of malicious PVF code has a higher risk of compromising this machine.
+Secure mode is enabled only for Linux 
+and a full secure mode is enabled only for Linux x86-64.
+2025-02-05 20:37:50 👶 Starting BABE Authorship worker    
+2025-02-05 20:37:50 🥩 BEEFY gadget waiting for BEEFY pallet to become available...    
+2025-02-05 20:37:55 💤 Idle (0 peers), best: #0 (0x2e29…9ca1), finalized #0 (0x2e29…9ca1), ⬇ 1.0kiB/s ⬆ 1.0kiB/s    
+2025-02-05 20:38:00 💤 Idle (2 peers), best: #0 (0x2e29…9ca1), finalized #0 (0x2e29…9ca1), ⬇ 2.0kiB/s ⬆ 2.3kiB/s    
+2025-02-05 20:38:02 👶 New epoch 0 launching at block 0x6c74…2ef0 (block slot 289793780 >= start slot 289793780).    
+2025-02-05 20:38:02 👶 Next epoch starts at slot 289793790    
+2025-02-05 20:38:02 ParentBlockRandomness did not provide entropy    
+2025-02-05 20:38:02 🏆 Imported #1 (0x2e29…9ca1 → 0x6c74…2ef0)    
+2025-02-05 20:38:05 💤 Idle (2 peers), best: #1 (0x6c74…2ef0), finalized #0 (0x2e29…9ca1), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
+2025-02-05 20:38:06 🏆 Imported #2 (0x6c74…2ef0 → 0x1f3f…bc60)    
+2025-02-05 20:38:10 💤 Idle (2 peers), best: #2 (0x1f3f…bc60), finalized #0 (0x2e29…9ca1), ⬇ 0.9kiB/s ⬆ 0.7kiB/s    
+2025-02-05 20:38:12 🙌 Starting consensus session on top of parent 0x1f3f6a7341af4266d46b42ddb80b2437bd371e6f1272ac87be9f804d5ca2bc60 (#2)    
+2025-02-05 20:38:12 🎁 Prepared block for proposing at 3 (5 ms) [hash: 0x4372e1de594e3b8f7d92d7949e916377b224c6f3f29240308666eafcdb0be7a0; parent_hash: 0x1f3f…bc60; extrinsics (2): [0x00fc…b95c, 0x4a8f…9888]    
+2025-02-05 20:38:12 🔖 Pre-sealed block for proposal at 3. Hash now 0x38fc8f291ebcadd5e26e922790d3b1f30e9b99ea838f49c5c0ee24a69ec95abb, previously 0x4372e1de594e3b8f7d92d7949e916377b224c6f3f29240308666eafcdb0be7a0.    
+2025-02-05 20:38:12 🏆 Imported #3 (0x1f3f…bc60 → 0x38fc…5abb)    
+2025-02-05 20:38:15 🥩 BEEFY pallet available: block 1 beefy genesis 1    
+2025-02-05 20:38:15 🥩 Loading BEEFY voter state from genesis on what appears to be first startup. Starting voting rounds at block 1, genesis validator set ValidatorSet { validators: [Public(020a1091341fe5664bfa1782d5e04779689068c916b04cb365ec3153755684d9a1 (1CoWvCok...)), Public(0390084fdbf27d2b79d26a4f13f0ccd982cb755a661969143c37cbc49ef5b91f27 (1Mcq981h...))], id: 0 }.    
+2025-02-05 20:38:15 🥩 run BEEFY worker, best grandpa: #1.    
+2025-02-05 20:38:15 🥩 Concluded mandatory round #1    
+2025-02-05 20:38:15 💤 Idle (2 peers), best: #3 (0x38fc…5abb), finalized #1 (0x6c74…2ef0), ⬇ 0.6kiB/s ⬆ 1.2kiB/s    
+2025-02-05 20:38:18 🙌 Starting consensus session on top of parent 0x38fc8f291ebcadd5e26e922790d3b1f30e9b99ea838f49c5c0ee24a69ec95abb (#3)    
+2025-02-05 20:38:18 🎁 Prepared block for proposing at 4 (4 ms) [hash: 0xf83530aafb480989ecdef7d686f3db0e4f3aa73605662ef45396600b870c5ebb; parent_hash: 0x38fc…5abb; extrinsics (2): [0x5324…77ba, 0x68ce…df62]    
+2025-02-05 20:38:18 🔖 Pre-sealed block for proposal at 4. Hash now 0x12ea142f1a818091b7cf6b9f1e49f18bab5c6083c0a0bf30a65a053c76994c70, previously 0xf83530aafb480989ecdef7d686f3db0e4f3aa73605662ef45396600b870c5ebb.    
+2025-02-05 20:38:18 🏆 Imported #4 (0x38fc…5abb → 0x12ea…4c70)    
+2025-02-05 20:38:20 💤 Idle (2 peers), best: #4 (0x12ea…4c70), finalized #1 (0x6c74…2ef0), ⬇ 0.5kiB/s ⬆ 0.9kiB/s    
+2025-02-05 20:38:24 🙌 Starting consensus session on top of parent 0x12ea142f1a818091b7cf6b9f1e49f18bab5c6083c0a0bf30a65a053c76994c70 (#4)    
+2025-02-05 20:38:24 🎁 Prepared block for proposing at 5 (2 ms) [hash: 0xe9ceaa4a236f5095ef2f337a3912d2a8cd9c208f5fe1c148f392c0908b5d0416; parent_hash: 0x12ea…4c70; extrinsics (2): [0x4deb…b3ef, 0x50a4…15da]    
+2025-02-05 20:38:24 🔖 Pre-sealed block for proposal at 5. Hash now 0x6b8250e38f6da8ffb814e200245127b5a98edee8dd65cfe250755b98c40db690, previously 0xe9ceaa4a236f5095ef2f337a3912d2a8cd9c208f5fe1c148f392c0908b5d0416.    
+2025-02-05 20:38:24 🏆 Imported #5 (0x12ea…4c70 → 0x6b82…b690)    
+2025-02-05 20:38:25 💤 Idle (2 peers), best: #5 (0x6b82…b690), finalized #2 (0x1f3f…bc60), ⬇ 1.0kiB/s ⬆ 1.4kiB/s    
+2025-02-05 20:38:30 🏆 Imported #6 (0x6b82…b690 → 0x6f78…4d88)    
+2025-02-05 20:38:30 💤 Idle (2 peers), best: #6 (0x6f78…4d88), finalized #3 (0x38fc…5abb), ⬇ 0.8kiB/s ⬆ 0.7kiB/s    
+2025-02-05 20:38:35 💤 Idle (2 peers), best: #6 (0x6f78…4d88), finalized #4 (0x12ea…4c70), ⬇ 0.4kiB/s ⬆ 0.4kiB/s    
+2025-02-05 20:38:36 🙌 Starting consensus session on top of parent 0x6f787e91a5e4344e6357ae40042ba3d895845a5f33479d468a2c9f409f6e4d88 (#6)    
+2025-02-05 20:38:36 🎁 Prepared block for proposing at 7 (2 ms) [hash: 0x4aaf614c898c97cba8c37bdb4332e97babe07e8ae50daa38323d49ad294f4df8; parent_hash: 0x6f78…4d88; extrinsics (2): [0xd983…2c06, 0x663a…0eb2]    
+2025-02-05 20:38:36 🔖 Pre-sealed block for proposal at 7. Hash now 0x28546e80a5148f290446133bf9519ec5bd3dea622138b7eabae0c1f79b103949, previously 0x4aaf614c898c97cba8c37bdb4332e97babe07e8ae50daa38323d49ad294f4df8.    
+2025-02-05 20:38:36 🏆 Imported #7 (0x6f78…4d88 → 0x2854…3949)    
+2025-02-05 20:38:40 💤 Idle (2 peers), best: #7 (0x2854…3949), finalized #5 (0x6b82…b690), ⬇ 0.5kiB/s ⬆ 1.1kiB/s    
+2025-02-05 20:38:42 🏆 Imported #8 (0x2854…3949 → 0xc149…28eb)    
+2025-02-05 20:38:45 💤 Idle (2 peers), best: #8 (0xc149…28eb), finalized #5 (0x6b82…b690), ⬇ 0.7kiB/s ⬆ 0.6kiB/s    
+2025-02-05 20:38:48 🏆 Imported #9 (0xc149…28eb → 0x4125…d8ae)    
+2025-02-05 20:38:51 💤 Idle (2 peers), best: #9 (0x4125…d8ae), finalized #6 (0x6f78…4d88), ⬇ 0.7kiB/s ⬆ 0.5kiB/s    
+2025-02-05 20:38:54 🏆 Imported #10 (0x4125…d8ae → 0x1bf6…ad12)    
+2025-02-05 20:38:56 💤 Idle (2 peers), best: #10 (0x1bf6…ad12), finalized #7 (0x2854…3949), ⬇ 1.2kiB/s ⬆ 1.0kiB/s    
+2025-02-05 20:39:00 👶 New epoch 1 launching at block 0x7ba4…c9f3 (block slot 289793790 >= start slot 289793790).    
+2025-02-05 20:39:00 👶 Next epoch starts at slot 289793800    
+2025-02-05 20:39:00 🏆 Imported #11 (0x1bf6…ad12 → 0x7ba4…c9f3)    
+2025-02-05 20:39:00 Node uses the following topology indices index_in_gossip_topology=Some(ValidatorIndex(0)) index_in_parachain_authorities=Some(Active(ValidatorIndex(0)))
+2025-02-05 20:39:01 💤 Idle (2 peers), best: #11 (0x7ba4…c9f3), finalized #8 (0xc149…28eb), ⬇ 3.3kiB/s ⬆ 1.0kiB/s    
+2025-02-05 20:39:06 🙌 Starting consensus session on top of parent 0x7ba41110c53f94f1a5ff67236721d426b85169014c4400da56abf7895b6bc9f3 (#11)    
+2025-02-05 20:39:06 🎁 Prepared block for proposing at 12 (3 ms) [hash: 0xa313add1e5f074e246e0334c3a22e6cafe27fcb7d48ebc6f39fafa92d544e712; parent_hash: 0x7ba4…c9f3; extrinsics (2): [0xe281…d1a8, 0x965e…3c71]    
+2025-02-05 20:39:06 💤 Idle (2 peers), best: #11 (0x7ba4…c9f3), finalized #9 (0x4125…d8ae), ⬇ 0.6kiB/s ⬆ 1.3kiB/s    
+2025-02-05 20:39:06 🔖 Pre-sealed block for proposal at 12. Hash now 0x5d579c1a330532a15369c93f59e3260ee90be1e1d9741d80edf19ae8848435df, previously 0xa313add1e5f074e246e0334c3a22e6cafe27fcb7d48ebc6f39fafa92d544e712.    
+2025-02-05 20:39:06 🏆 Imported #12 (0x7ba4…c9f3 → 0x5d57…35df)    
+2025-02-05 20:39:06 🆕 Imported #12 (0x7ba4…c9f3 → 0x9ae8…9ef5)    
+2025-02-05 20:39:11 💤 Idle (2 peers), best: #12 (0x5d57…35df), finalized #9 (0x4125…d8ae), ⬇ 3.3kiB/s ⬆ 3.1kiB/s    
+2025-02-05 20:39:12 🏆 Imported #13 (0x5d57…35df → 0xca28…e1c2)    
+2025-02-05 20:39:15 🥩 New Rounds for validator set id: 1 with session_start 11    
+2025-02-05 20:39:15 🥩 Concluded mandatory round #11    
+2025-02-05 20:39:16 💤 Idle (2 peers), best: #13 (0xca28…e1c2), finalized #11 (0x7ba4…c9f3), ⬇ 2.4kiB/s ⬆ 3.4kiB/s    
+2025-02-05 20:39:18 🏆 Imported #14 (0xca28…e1c2 → 0x2e2a…79b0)    
+2025-02-05 20:39:21 💤 Idle (2 peers), best: #14 (0x2e2a…79b0), finalized #11 (0x7ba4…c9f3), ⬇ 2.1kiB/s ⬆ 3.1kiB/s    
+2025-02-05 20:39:24 🏆 Imported #15 (0x2e2a…79b0 → 0xa6c9…406e)    
+2025-02-05 20:39:26 💤 Idle (2 peers), best: #15 (0xa6c9…406e), finalized #12 (0x5d57…35df), ⬇ 2.4kiB/s ⬆ 3.4kiB/s    
+2025-02-05 20:39:30 🙌 Starting consensus session on top of parent 0xa6c9bc21556818f9fec66d6ce1d2b598f008413c5869724cf1e344213caa406e (#15)    
+2025-02-05 20:39:30 🎁 Prepared block for proposing at 16 (6 ms) [hash: 0x5f06f81c6007d0b91eccfe930945f561c189f5018bc63f9a7c00e6ac4bc9cbef; parent_hash: 0xa6c9…406e; extrinsics (2): [0x116a…d528, 0x946b…eece]    
+2025-02-05 20:39:30 🔖 Pre-sealed block for proposal at 16. Hash now 0x908d3545f33d08ce79f7155461f248b4d50933824e7c7c9ec218936941f4cbbd, previously 0x5f06f81c6007d0b91eccfe930945f561c189f5018bc63f9a7c00e6ac4bc9cbef.    
+2025-02-05 20:39:30 🏆 Imported #16 (0xa6c9…406e → 0x908d…cbbd)    
+2025-02-05 20:39:31 💤 Idle (2 peers), best: #16 (0x908d…cbbd), finalized #13 (0xca28…e1c2), ⬇ 1.9kiB/s ⬆ 3.9kiB/s    
+2025-02-05 20:39:36 🏆 Imported #17 (0x908d…cbbd → 0xd066…95e0)    
+2025-02-05 20:39:36 💤 Idle (2 peers), best: #17 (0xd066…95e0), finalized #14 (0x2e2a…79b0), ⬇ 0.9kiB/s ⬆ 3.0kiB/s    
+2025-02-05 20:39:41 💤 Idle (2 peers), best: #17 (0xd066…95e0), finalized #15 (0xa6c9…406e), ⬇ 1.6kiB/s ⬆ 1.0kiB/s    
+2025-02-05 20:39:42 🙌 Starting consensus session on top of parent 0xd0661f8d4c66a00fc31d7737f8391ce378742b61a918537b575df127022295e0 (#17)    
+2025-02-05 20:39:42 🎁 Prepared block for proposing at 18 (5 ms) [hash: 0x31636de68a37593b5dd02ab486013575239e4f84085afdef8f39193a29fd1334; parent_hash: 0xd066…95e0; extrinsics (2): [0xd9b2…7dfb, 0x3126…e355]    
+2025-02-05 20:39:42 🔖 Pre-sealed block for proposal at 18. Hash now 0x377d06152b7a105581a4bb61d17862a3a38363dc6f78cfdfaa5a635b7cb42a6a, previously 0x31636de68a37593b5dd02ab486013575239e4f84085afdef8f39193a29fd1334.    
+2025-02-05 20:39:42 🏆 Imported #18 (0xd066…95e0 → 0x377d…2a6a)    

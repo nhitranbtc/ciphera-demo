@@ -1,0 +1,38 @@
+metadata:
+  name: temp-2
+  namespace: zombie-a16ad5cac76603612fdefb00cd9f9424
+  labels:
+    zombie-role: temp
+    app: zombienet
+    zombie-ns: zombie-a16ad5cac76603612fdefb00cd9f9424
+    name: zombie-a16ad5cac76603612fdefb00cd9f9424
+    instance: temp-2
+spec:
+  cfgPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/temp-2/cfg
+  dataPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/temp-2/data
+  ports:
+    - containerPort: 9615
+      name: prometheus
+      flag: --prometheus-port
+      hostPort: 62402
+    - containerPort: 9933
+      name: rpc
+      flag: --rpc-port
+      hostPort: 62401
+    - containerPort: 9944
+      name: rpc-ws
+      flag: --ws-port
+      hostPort: 62400
+    - containerPort: 30333
+      name: p2p
+      flag: --port
+      hostPort: 62399
+  command:
+    - bash
+    - -c
+    - ../target/release/ciphera-collator build-spec  --disable-default-bootnode
+      --chain
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/2111-rococo-local-plain.json  --raw
+      >
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/2111-rococo-local-raw.json
+  env: {}

@@ -1,0 +1,43 @@
+metadata:
+  name: ciphera-collator1
+  namespace: zombie-a16ad5cac76603612fdefb00cd9f9424
+  labels:
+    zombie-role: cumulus-collator
+    app: zombienet
+    zombie-ns: zombie-a16ad5cac76603612fdefb00cd9f9424
+    name: zombie-a16ad5cac76603612fdefb00cd9f9424
+    instance: ciphera-collator1
+spec:
+  cfgPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/ciphera-collator1/cfg
+  dataPath: /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/ciphera-collator1/data
+  ports:
+    - containerPort: 9615
+      name: prometheus
+      flag: --prometheus-port
+      hostPort: 62387
+    - containerPort: 9933
+      name: rpc
+      flag: --rpc-port
+      hostPort: 62386
+    - containerPort: 9944
+      name: rpc-ws
+      flag: --ws-port
+      hostPort: 9944
+    - containerPort: 30333
+      name: p2p
+      flag: --port
+      hostPort: 62385
+  command:
+    - ../target/release/ciphera-collator --name ciphera-collator1 --node-key
+      1678111c0477f9dccd521d0c2e8fd2bb8c3436f5ab6beb8f6cc5381353d234b8 --chain
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/ciphera-collator1/cfg/rococo-local-2111.json
+      --base-path
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/ciphera-collator1/data
+      --listen-addr /ip4/0.0.0.0/tcp/62385/ws --prometheus-external --rpc-cors
+      all --unsafe-rpc-external --rpc-methods unsafe --prometheus-port 62387
+      --rpc-port 9944 --collator -- --chain
+      /var/folders/vf/pqzq3h5s4nnbcd0465lvpt7w0000gp/T/zombie-a16ad5cac76603612fdefb00cd9f9424_-65027-KuTr0W7rHyh7/ciphera-collator1/cfg/rococo-local.json
+      --execution wasm --port 62435 --rpc-port 62436
+  env:
+    COLORBT_SHOW_HIDDEN: "1"
+    RUST_BACKTRACE: FULL
