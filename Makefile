@@ -24,14 +24,17 @@ help:
 		printf "  %-50s %s\n" $$help_command $$help_info ; \
     done
 
+
 .PHONY: build-parachain ## Build release parachain node
 build-parachain:
+	mkdir -p parachain/binaries && \
 	@cd parachain/binaries && \
 	if [ ! -d "polkadot-sdk" ]; then \
 		git clone https://github.com/paritytech/polkadot-sdk.git; \
 	fi; \
 	cd polkadot-sdk && git checkout stable2407 && cargo build --release; \
-	cd .. && mkdir -p polkadot-v1.17.0 && cp polkadot-sdk/target/release/* polkadot-v1.17.0/;
+	cd .. && mkdir -p polkadot-stable2407 && find polkadot-sdk/target/release/ -maxdepth 1 -type f -exec cp {} polkadot-stable2407/ \;
+
 
 
 # build release
