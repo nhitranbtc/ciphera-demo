@@ -3,6 +3,7 @@
 **/contracts/demo_ciphera/docs
 
 **/parachain/binaries/*
+!**/parachain/binaries/polkadot-stable2407
 **/parachain/zombienet/*
 !**/parachain/zombienet/zombienet-demo
 **/parachain/zombienet/zombienet-demo/alice/data/chains/rococo_local_testnet/db
