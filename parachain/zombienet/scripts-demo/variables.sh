@@ -8,5 +8,5 @@ ZOMBIENET_TMP=$ROOTDIR/parachain/zombienet/zombienet-demo ## Custom
 CIPHERA_DEMO_N="ciphera-demo" ## Update: 01, 02, ...
 
 
-
 CIPHERA_DEMO_ROOTDIR="$ROOTDIR/parachain/zombienet/$CIPHERA_DEMO_N"
+CIPHERA_DEMO_LOG="$ROOTDIR/parachain/zombienet/$CIPHERA_DEMO_N/log"

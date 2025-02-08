@@ -5,7 +5,7 @@ set -eu
 
 ROOTDIR=$(git rev-parse --show-toplevel)
 
-cd $ROOTDIR/contracts/demo_ciphera/
+cd $ROOTDIR/parachain/contracts/demo_ciphera/
 
 pop build --release
 

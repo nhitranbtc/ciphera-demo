@@ -3,7 +3,6 @@
 **/contracts/demo_ciphera/docs
 
 **/parachain/binaries/*
-!**/parachain/binaries/polkadot-stable2407
 **/parachain/zombienet/*
 !**/parachain/zombienet/zombienet-demo
 **/parachain/zombienet/zombienet-demo/alice/data/chains/rococo_local_testnet/db
@@ -12,11 +11,13 @@
 **/parachain/zombienet/zombienet-demo/ciphera-collator1/data/polkadot/chains/rococo_local_testnet/db
 
 !**/parachain/zombienet/ciphera-demo
+**/parachain/zombienet/ciphera-demo/log
 **/parachain/zombienet/ciphera-demo/alice/data/chains/rococo_local_testnet/db
 **/parachain/zombienet/ciphera-demo/bob/data/chains/rococo_local_testnet/db
 **/parachain/zombienet/ciphera-demo/ciphera-collator1/data/chains/local_testnet/db
 **/parachain/zombienet/ciphera-demo/ciphera-collator1/data/polkadot/chains/rococo_local_testnet/db
 !**/parachain/zombienet/scripts-demo
+**/nohup.out
 
 
 # MacOS
